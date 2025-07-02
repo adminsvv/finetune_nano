@@ -7,7 +7,7 @@ api_key = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(api_key=api_key)
 
 # Load stock data
-df_canslim = pd.read_csv('D:/Chat Gpt/finetuning/Canslim/canslim_data_st.csv')
+df_canslim = pd.read_csv('canslim_data_st.csv')
 all_stocks = df_canslim['nsesymbol'].unique()
 
 st.set_page_config(
