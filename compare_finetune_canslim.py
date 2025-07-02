@@ -3,8 +3,7 @@ import pandas as pd
 from openai import OpenAI
 
 # Load API key and setup OpenAI client
-with open('D:/Chat Gpt/api_key_rishabh_openai.txt', 'r') as file:
-    api_key = file.read().strip()
+api_key = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(api_key=api_key)
 
 # Load stock data
